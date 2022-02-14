@@ -2,11 +2,11 @@ function Tours(props) {
 
     return (
         <>
-            {props.data.map(des => {
+            {props.data.map((des,idx) => {
                 return (
-                    <div>
-                        <img src={des.image} alt={des.name} />
-                        <h3>Name : {des.name}</h3>
+                    <div key={idx}> 
+                        <h4>ID : {des.id}</h4>
+                        <p>info : {des.info}</p>
                     </div>
                 );
             })}
