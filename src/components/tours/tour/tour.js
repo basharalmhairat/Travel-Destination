@@ -2,15 +2,15 @@ function Tour(props) {
 
     return (
         <>
-            {props.data.map((det,idx) => {
-                return (
-                    <div key={idx}> 
-                        <img src={det.image} alt={det.name} />
-                        <h3>Name : {det.name}</h3>
+         
+              
+                    <div > 
+                        <img src={props.tour.image} alt={props.tour.name} />
+                        <h3>Name : {props.tour.name}</h3>
                         
                     </div>
-                );
-            })}
+                
+           
         </>
     );
 }

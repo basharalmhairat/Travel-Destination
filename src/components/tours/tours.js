@@ -1,3 +1,6 @@
+import { Link } from "react-router-dom";
+import Tour from "./tour/tour";
+
 function Tours(props) {
 
     return (
@@ -5,8 +8,8 @@ function Tours(props) {
             {props.data.map((des,idx) => {
                 return (
                     <div key={idx}> 
-                        <h4>ID : {des.id}</h4>
-                        <p>info : {des.info}</p>
+                       <Link to= {`/city/${des.id}`}>
+                           <Tour tour={des}/></Link>
                     </div>
                 );
             })}
