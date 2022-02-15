@@ -1,4 +1,3 @@
-// import '../App.css';
 import { Link } from 'react-router-dom';
 function Header(props) {
     return (
@@ -7,7 +6,7 @@ function Header(props) {
             <h1> welcome to my travel destination</h1>
             <nav>
                 <Link to='/'>  Home </Link>
-                <Link to='/tours'>  More details  </Link>
+                
                 
             </nav>
             
